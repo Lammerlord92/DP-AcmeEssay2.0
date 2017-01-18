@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles_es.xml
+ *
+ * Copyright (C) 2013 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+      
+<tiles-definitions>
+	
+	<definition name="publicSession/organiser/edit" extends="master.page">
+		<put-attribute name="title" value="Editar sesión pública"/>
+		<put-attribute name="body" value="/views/publicSession/edit.jsp"/>
+	</definition>
+	
+	<definition name="publicSession/list" extends="master.page">	
+		<put-attribute name="title" value="Sesiones públicas" />
+		<put-attribute name="body" value="/views/publicSession/list.jsp" />
+	</definition>
+	
+	<definition name="publicSession/organiser/list" extends="master.page">	
+		<put-attribute name="title" value="Mis sesiones" />
+		<put-attribute name="body" value="/views/publicSession/list.jsp" />
+	</definition>
+	
+	<definition name="publicSession/organiser/listInactive" extends="master.page">	
+		<put-attribute name="title" value="Sesiones inactivas" />
+		<put-attribute name="body" value="/views/publicSession/list.jsp" />
+	</definition>
+	
+	<definition name="publicSession/organiser/listByContest" extends="master.page">	
+		<put-attribute name="title" value="Sesiones públicas" />
+		<put-attribute name="body" value="/views/publicSession/list.jsp" />
+	</definition>
+	
+	<definition name="publicSession/author/listByEssay" extends="master.page">	
+		<put-attribute name="title" value="Sesiones públicas" />
+		<put-attribute name="body" value="/views/publicSession/list.jsp" />
+	</definition>
+</tiles-definitions>

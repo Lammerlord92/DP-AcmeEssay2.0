@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+ *
+ * Copyright (C) 2013 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+	
+	<definition name="essay/list" extends="master.page">	
+		<put-attribute name="title" value="My essays" />
+		<put-attribute name="body" value="/views/essay/list.jsp" />
+	</definition>
+	
+	<definition name="essay/organiser/listBySession" extends="master.page">	
+		<put-attribute name="title" value="Essays for public session" />
+		<put-attribute name="body" value="/views/essay/listBySession.jsp" />
+	</definition>
+	
+	<definition name="essay/organiser/listAll" extends="master.page">	
+		<put-attribute name="title" value="Essays" />
+		<put-attribute name="body" value="/views/essay/listAll.jsp" />
+	</definition>
+	
+	<definition name="essay/listPublished" extends="master.page">	
+		<put-attribute name="title" value="Essays published" />
+		<put-attribute name="body" value="/views/essay/list.jsp" />
+	</definition>
+	
+	<definition name="essay/listMyEssays" extends="master.page">	
+		<put-attribute name="title" value="My essays" />
+		<put-attribute name="body" value="/views/essay/listMyEssays.jsp" />
+	</definition>
+	
+	<definition name="essay/author/details" extends="master.page">	
+		<put-attribute name="title" value="Details" />
+		<put-attribute name="body" value="/views/essay/details.jsp" />
+	</definition>
+	
+	<definition name="essay/details" extends="master.page">	
+		<put-attribute name="title" value="Details" />
+		<put-attribute name="body" value="/views/essay/details.jsp" />
+	</definition>
+</tiles-definitions>

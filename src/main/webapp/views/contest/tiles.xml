@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+ *
+ * Copyright (C) 2013 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="contest/list" extends="master.page">	
+		<put-attribute name="title" value="Contest list" />
+		<put-attribute name="body" value="/views/contest/list.jsp" />
+	</definition>
+	
+	<definition name="contest/organiser/list" extends="master.page">	
+		<put-attribute name="title" value="My contests" />
+		<put-attribute name="body" value="/views/contest/list.jsp" />
+	</definition>
+	
+	<definition name="contest/organiser/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar" />
+		<put-attribute name="body" value="/views/contest/edit.jsp" />
+	</definition>
+	
+	<definition name="contest/organiser/create" extends="master.page">	
+		<put-attribute name="title" value="Create" />
+		<put-attribute name="body" value="/views/contest/create.jsp" />
+	</definition>
+	<definition name="contest/organiser/addOrganiser" extends="master.page">	
+		<put-attribute name="title" value="Add organiser" />
+		<put-attribute name="body" value="/views/contest/addOrganiser.jsp" />
+	</definition>
+	
+</tiles-definitions>
